@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
 
-y=1
+y=0
 until [ $y -ge 10 ]
 do
 	echo "Best School"
