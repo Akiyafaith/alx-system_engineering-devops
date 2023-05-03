@@ -2,5 +2,5 @@
 
 arg = ARGV[0]
 
-match =arg.scan(/h(a)+t/i)
+match =arg.scan(/hbt+n/i)
 put match.join("\n")
