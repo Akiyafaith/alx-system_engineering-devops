@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 input_arg = ARGV[0]
 
-if /School/i === input_arg
-  puts "School"
-end
+match = input_arg.scan(/School/i)
+puts match.join('')
