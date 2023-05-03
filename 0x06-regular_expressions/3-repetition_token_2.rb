@@ -2,5 +2,5 @@
 
 argument = ARGV[0]
 
-result == argumet.scan(/^hb(t+)(n)/)
+result == argument.scan(/^hb(t+)(n)/)
 puts result.join
