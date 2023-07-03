@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-
 # install the nginx web server
+# the nginx should listen on port 80
 
-apt-get update
-
+apt-get -y update
 apt- get -y install nginx
 
 # Configure Nginx to listen on port 80
