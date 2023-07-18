@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if [ $# -eq 0 ]; then
+	echo "please provide username"
+	exit 1
+fi
+
+sudo -u "$1" whoami
