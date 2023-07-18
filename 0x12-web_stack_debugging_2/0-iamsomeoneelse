@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# run software as another user
+# run software as another user, by passing one argument
 if [ $# -eq 0 ]; then
 	echo "please provide username"
 	exit 1
