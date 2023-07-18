@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# run Nginx as Nginx
+sed -i 's/user  nginx;/user  nginx;\nworker_processes  auto;/g' /etc/nginx/nginx.conf
+sed -i 's/# server_tokens off;/server_tokens off;/g' /etc/nginx/nginx.conf
+
+sed -i 's/listen       80;/listen       8080;/g' /etc/nginx/conf.d/default.conf
+
+service nginx restart
