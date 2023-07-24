@@ -4,8 +4,8 @@ display the information about his/her TODO list progress
 Export data in CSV format
 """
 
-import requests
 import csv
+import requests
 import sys
 
 if __name__ == '__main__':
