@@ -10,11 +10,12 @@ if __name__ == '__main__':
 
     user_data = requests.get(base_url + 'users/{}'.format(employee_id)).json()
     todo_data = requests.get(
-        base_url + 'todos', 
+        base_url + 'todos',
         params={'userId': employee_id}
     ).json()
 
-    completed_tasks = [task['title'] for task in todo_data if task['completed']]
+    completed_tasks = [task['title'] for task in todo_data
+                       if task['completed']]
     total_tasks = len(todo_data)
 
     print("Employee {} is done with tasks({}/{}):".format(
