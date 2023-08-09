@@ -19,7 +19,7 @@ def top_ten(subreddit):
     if data is not None and "children" in data:
         for post in data["children"][:10]:
             post_data = post.get("data")
-            if post_data is not None and "title" in post_data
+            if post_data is not None and "title" in post_data:
                 print(post_data["title"])
 
 if __name__ == '__main__':
