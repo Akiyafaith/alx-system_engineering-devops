@@ -7,7 +7,7 @@ def top_ten(subreddit):
     """ Query the Reddit API and print the titles
     of the fist 10 hot posts for a given subreddit"""
     user_agent = 'MyBot/1.0'
-    url = f"https://www.reddit.com/r/{subreddit}/hot.json"
+    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     headers = {'User-Agent': user_agent}
 
     response = requests.get(url, headers=headers, allow_redirects=False)
