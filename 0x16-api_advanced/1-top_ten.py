@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" Function that Queries the Reddit API and print the titles of hot posts"""
+""" Function that Queries the Reddit API
+and print the titles of hot posts"""
 import requests
  
 
